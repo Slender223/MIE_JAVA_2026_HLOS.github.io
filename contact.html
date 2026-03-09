@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+</head>
+<body style="font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); box-sizing: border-box;">
+
+    <!-- Main container: split into two columns -->
+    <div style="max-width: 900px; width: 100%; background-color: white; border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.2); display: flex; flex-wrap: wrap; overflow: hidden;">
+
+        <!-- LEFT PANEL: Contact details (icons + info) -->
+        <div style="flex: 1 1 280px; background: #1f2a48; color: white; padding: 40px 30px; display: flex; flex-direction: column; gap: 25px;">
+            
+            <h3 style="margin: 0 0 10px 0; font-weight: 400; font-size: 1.5rem; letter-spacing: 0.5px; color: #b7d0ff;">Contact information</h3>
+            
+            <!-- Email with base64 icon -->
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <img src="data:image/png;base64,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" alt="email icon" style="width: 32px; height: 32px;">
+                <div>
+                    <div style="font-size: 12px; opacity: 0.7;">EMAIL</div>
+                    <div style="font-weight: 500;">snenhlanhlahlongwane36@gmail.com</div>
+                </div>
+            </div>
+            
+            <!-- Phone with call icon (using a simple emoji as fallback since the URL didn't work) -->
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <span style="font-size: 32px;">📞</span>
+                <div>
+                    <div style="font-size: 12px; opacity: 0.7;">PHONE</div>
+                    <div style="font-weight: 500; letter-spacing: 1px;">071 469 5239</div>
+                </div>
+            </div>
+            
+            <!-- LinkedIn -->
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <span style="font-size: 32px;">🔗</span>
+                <div>
+                    <div style="font-size: 12px; opacity: 0.7;">LINKEDIN</div>
+                    <a href="https://www.linkedin.com/in/sinenhlanhla-hlongwane-03503634b" target="_blank" style="color: white; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3);">linkedin.com/in/sinenhlanhla</a>
+                </div>
+            </div>
+            
+            <div style="margin-top: 20px; font-size: 13px; opacity: 0.6; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 15px;">
+                Available for opportunities
+            </div>
+        </div>
+
+        <!-- RIGHT PANEL: Contact form -->
+        <div style="flex: 1 1 380px; background: white; padding: 40px 35px;">
+            <h3 style="margin-top: 0; margin-bottom: 25px; font-weight: 500; color: #333;">Send a message</h3>
+            
+            <form>
+                <!-- Name field -->
+                <div style="margin-bottom: 20px;">
+                    <label for="name" style="display: block; margin-bottom: 6px; font-size: 13px; font-weight: 600; color: #4a5568;">Name</label>
+                    <input type="text" id="name" name="name" style="width: 100%; padding: 10px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
+                </div>
+                
+                <!-- Email field -->
+                <div style="margin-bottom: 20px;">
+                    <label for="email" style="display: block; margin-bottom: 6px; font-size: 13px; font-weight: 600; color: #4a5568;">Email</label>
+                    <input type="email" id="email" name="email" style="width: 100%; padding: 10px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
+                </div>
+                
+                <!-- Message field -->
+                <div style="margin-bottom: 25px;">
+                    <label for="message" style="display: block; margin-bottom: 6px; font-size: 13px; font-weight: 600; color: #4a5568;">Message</label>
+                    <textarea id="message" name="message" rows="4" style="width: 100%; padding: 10px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px; font-family: inherit; resize: vertical; box-sizing: border-box;"></textarea>
+                </div>
+                
+                <!-- Submit button -->
+                <input type="submit" value="Send Message" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; border: none; padding: 12px 25px; font-size: 16px; font-weight: 600; border-radius: 8px; cursor: pointer; width: 100%;">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

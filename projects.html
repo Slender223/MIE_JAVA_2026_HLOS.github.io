@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echoes of Death</title>
+    <style>
+        /* Import a nice font */
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@300;400;600;700&display=swap');
+
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a0e0e 100%);
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        h1 strong {
+            font-family: 'Creepster', cursive;
+            font-size: 4rem;
+            background: linear-gradient(45deg, #ff6b6b, #c41e1e, #8b0000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+            letter-spacing: 4px;
+            animation: flicker 3s infinite;
+        }
+
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            33% { opacity: 0.9; text-shadow: 0 0 30px rgba(255, 0, 0, 0.8); }
+            66% { opacity: 0.95; text-shadow: 0 0 10px rgba(255, 0, 0, 0.3); }
+        }
+
+        h2 {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px auto;
+            max-width: 900px;
+            font-weight: 400;
+            font-size: 1.2rem;
+            border-left: 5px solid #ff4444;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        p1 {
+            display: block;
+            background: rgba(20, 20, 20, 0.9);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px auto;
+            max-width: 900px;
+            border: 1px solid #333;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            font-size: 1.1rem;
+            line-height: 2;
+        }
+
+        p {
+            display: inline-block;
+            background: linear-gradient(45deg, #333, #1a1a1a);
+            color: #ff6b6b;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin: 20px auto;
+            border: 2px solid #ff4444;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(255, 68, 68, 0.3);
+            text-align: center;
+            max-width: 300px;
+        }
+
+        p:hover {
+            background: linear-gradient(45deg, #ff4444, #c41e1e);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 0 30px rgba(255, 68, 68, 0.5);
+            border-color: white;
+        }
+
+        img {
+            border-radius: 15px;
+            margin: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+            border: 3px solid #333;
+            max-width: calc(100% - 40px);
+            height: auto;
+        }
+
+        img:hover {
+            transform: scale(1.02);
+            border-color: #ff4444;
+            box-shadow: 0 15px 40px rgba(255, 68, 68, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            h1 strong { font-size: 2.5rem; }
+            h2 { font-size: 1rem; padding: 15px; }
+            p1 { padding: 15px; font-size: 0.95rem; }
+            img { width: calc(100% - 40px); margin: 10px; }
+            a { padding: 12px 25px; font-size: 1rem; width: 90%; }
+        }
+    </style>
+</head>
+<body>
+    <h1> 
+        <strong>Echoes of Death</strong>
+    </h1>
+    <h2>Developed an interactive story-driven game/quiz using C++, where players navigate through a narrative and answer questions to progress.</h2>
+    <p1>Technologies Used: C++ <br/>
+    Role: Sole developer/designer  <br/>
+    Achievements: This project helped me develop strong skills in C++ programming, including problem-solving, logic, and software development.<br/></p1>
+    <p>GitHub Link for My Project Available Upon Request</p>
+    <img src="1.png" alt="Failed Level 1 Example Demo" width="300px">
+    <img src="Congratulations.png" alt="Congratulations for Winning Level 1 Example Demo" width="300px">
+    <img src="coverPicture.png" alt="Cover Picture Demo" width="300px">
+</body>
+</html>
